@@ -1,0 +1,37 @@
+.reports-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .chart-container {
+    margin-bottom: 40px;
+  }
+  
+  .best-selling-items h3 {
+    margin-top: 20px;
+  }
+  
+  .additional-analytics p {
+    margin: 5px 0;
+  }
+  
+  .chart-container {
+    margin-bottom: 2rem;
+  }
+  
+  .pie-chart-container {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center the content horizontally */
+    margin-bottom: 2rem;
+  }
+  
+  .pie-chart-container h2 {
+    margin-bottom: 1rem; /* Space between title and chart */
+  }
+  
+  .pie-chart-container canvas {
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+  }

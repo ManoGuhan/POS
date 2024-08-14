@@ -1,0 +1,178 @@
+/* Pay.css */
+
+.pay-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-family: 'lud', sans-serif;
+}
+
+.pay-page .bill-section {
+  width: 55%;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  color: black;
+}
+
+.pay-page .bill-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.pay-page .bill-section .bill-header, 
+.pay-page .bill-section .bill-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #000000;
+}
+
+.pay-page .bill-section .bill-header {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+.pay-page .bill-section .bill-name, 
+.pay-page .bill-section .bill-price, 
+.pay-page .bill-section .bill-quantity {
+  width: 30%;
+  text-align: center;
+}
+
+.pay-page .bill-section .bill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pay-page .bill-section .customer-info {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.pay-page .payment-options {
+  width: 40%;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: black;
+  background-color: #ffffff; /* Change the background color to white */
+}
+
+.pay-page .payment-options .payment-buttons button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-page .payment-options .payment-buttons button:hover {
+  background-color: gold;
+  color: #000;
+}
+
+.pay-page .payment-options .upi-section img {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.pay-page .payment-options .cash-section input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+.pay-page .payment-options .card-section label {
+  display: block;
+  margin-top: 1rem;
+  background-color: #ffffff; /* Change the background color to white */
+}
+
+.pay-page .payment-options .card-section input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+.pay-page .payment-options .card-section button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-page .payment-options .card-section button:hover {
+  background-color: gold;
+  color: #000;
+}
+
+.pay-page .payment-options .input-section {
+  margin-top: 2rem;
+}
+
+.pay-page .payment-options .input-section label {
+  display: block;
+  margin-top: 1rem;
+  
+}
+
+.pay-page .payment-options .input-section input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #fcfafa;
+  border-radius: 4px;
+  background-color: #ffffff; 
+}
+
+.pay-page .print-button-container {
+  margin-top: auto;
+  text-align: center;
+}
+
+.pay-page .print-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-page .print-button:hover {
+  background-color: gold;
+  color: #000;
+}
+
+@media print {
+  .pay-page .no-print {
+    display: none;
+  }
+}
+
+.pay-page .total-cost {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: right;
+}

@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    background-image: url('../assets/loginback.gif'); /* Adjust path as needed */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    min-height: 100vh; /* Ensures the container covers the viewport height */
+    display: flex;
+    flex-direction: column; /* Allows vertical stacking */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding-bottom: 60px; /* Space for footer */
+    position: relative; /* Allows positioning of footer */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly more opaque background for better readability */
+    padding: 3rem; /* Increased padding */
+    border-radius: 8px; /* Rounded corners */
+    width: 100%;
+    max-width: 500px; /* Increased max width */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow for emphasis */
+    text-align: center;
+    transform: translateY(10%); /* Pulls the box up a bit */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    margin: 0 0 2.3rem 0;
+    font-size: 3rem;
+    color: #000000; 
+    /* font-family: 'lud'; */
+    opacity: 0; 
+    animation: fadeIn 0.3s ease-in-out forwards; 
+}
+
+.input, .inputGroup, .loginButton, .social-icons {
+    opacity: 0;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out forwards; /* Adjusted fade-in time */
+}
+
+.input, .inputGroup {
+    margin-bottom: 1.5rem; /* Increased margin */
+    font-family: 'lud'; /* Font family */
+}
+
+.input label, .inputGroup label {
+    display: block;
+    margin-bottom: 1rem; /* Increased margin */
+    font-size: 1.3rem; /* Increased font size */
+    font-weight: 400;
+    font-family: 'lud';
+    color: black;
+}
+
+.input input, .inputGroup input {
+    width: 100%;
+    padding: 1rem; /* Increased padding */
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.loginButton {
+    padding: 1rem 2rem; /* Increased padding */
+    font-family: 'lud'; /* Font family */
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #000; /* Dark text color for contrast */
+    font-size: 1.2rem; /* Increased font size */
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    background-color: #ffffff; /* Background color on hover */
+}
+
+.social-icons {
+    margin-top: auto; /* Pushes the icons to the bottom of the container */
+    margin-bottom: 5rem; 
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center icons horizontally */
+    width: 100%;
+}
+
+.social-icon {
+    font-size: 2rem; /* Adjust size of icons */
+    margin: 0 1rem; /* Space between icons */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #000; /* Icon color */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+.facebook:hover {
+    color: #3b5998; /* Facebook blue */
+}
+
+.twitter:hover {
+    color: #1da1f2; /* Twitter blue */
+}
+
+.insta:hover {
+    color: #f73ea7; /* Instagram pink */
+}
+
+.link:hover {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem; /* Padding around the footer content */
+    background-color: transparent; /* Transparent background for the footer */
+    color: rgb(0, 0, 0); /* Text color for the footer */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Ensure it covers the full width of the page */
+}
+
+.footer-text {
+    font-family: 'lud'; /* Consistent font with other elements */
+    font-size: 1rem; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+}

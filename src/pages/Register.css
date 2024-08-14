@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.reg-container {
+  background-image: url('../assets/loginback.gif'); /* Adjust path as needed */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  min-height: 100vh; /* Ensures the container covers the viewport height */
+  display: flex;
+  flex-direction: column; /* Allows vertical stacking */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding-bottom: 60px; /* Space for footer */
+  position: relative; /* Allows positioning of footer */
+}
+
+.reg-form-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly more opaque background for better readability */
+  padding: 3rem; /* Increased padding */
+  border-radius: 8px; /* Rounded corners */
+  width: 100%;
+  max-width: 500px; /* Increased max width */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow for emphasis */
+  text-align: center;
+  transform: translateY(-2%); /* Pulls the box up a bit */
+}
+
+h1 {
+  margin: 0 0 2.3rem 0;
+  font-size: 3rem; /* Adjust font size as needed */
+  color: #000; /* Dark text color for contrast */
+  font-family: 'lud'; /* Font family */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: none; /* Remove the cursor */
+}
+
+.reg-input, .reg-inputGroup, .reg-registerButton {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards; /* Fade-in time */
+}
+
+.reg-input, .reg-inputGroup {
+  margin-bottom: 1.5rem; /* Increased margin */
+  font-family: 'lud'; /* Font family */
+}
+
+.reg-input label, .reg-inputGroup label {
+  display: block;
+  margin-bottom: 1rem; /* Increased margin */
+  font-size: 1.3rem; /* Increased font size */
+  font-weight: 400;
+  font-family: 'lud';
+  color: black;
+}
+
+.reg-input input, .reg-inputGroup input {
+  width: 100%;
+  padding: 1rem; /* Increased padding */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.reg-registerButton {
+  padding: 1rem 2rem; /* Increased padding */
+  font-family: 'lud'; /* Font family */
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #000; /* Dark text color for contrast */
+  font-size: 1.2rem; /* Increased font size */
+  cursor: pointer;
+}
+
+.reg-registerButton:hover {
+  background-color: #fff; /* Background color on hover */
+}
+
+.reg-footer {
+  text-align: center;
+  padding: 1rem; /* Padding around the footer content */
+  background-color: transparent; /* Transparent background for the footer */
+  color: white; /* Text color for the footer */
+  position: relative;
+  bottom: 0;
+  width: 100%; /* Ensure it covers the full width of the page */
+}
+
+.reg-footer-text {
+  font-family: 'lud'; /* Consistent font with other elements */
+  font-size: 1rem; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+}

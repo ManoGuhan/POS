@@ -1,0 +1,206 @@
+body {
+  overflow-y: scroll;
+  background: #000000; /* Pure black background */
+  color: white; /* White text color */
+}
+
+.products-page {
+  display: flex;
+  font-family: 'lud', sans-serif;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for the content */
+  padding: 1rem;
+  border-radius: 8px; /* Rounded corners */
+  margin: 1rem; /* Margin around the content */
+  border: 2px solid white; /* White outline */
+}
+
+.sidebar {
+  width: 150px;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  border-right: 2px solid white; /* White border */
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.sidebar ul li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar ul li:hover {
+  transform: translateY(-5px);
+  background-color: white;
+  color: black;
+}
+
+.our-menu-section {
+  flex: 1;
+  padding: 1rem;
+  background-color: #000000; /* Pure black background */
+  border-radius: 8px;
+  margin-left: 1rem;
+  width: 100%;
+  max-width: 1500px;
+  border: 2px solid white; /* White outline */
+}
+
+.our-menu-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid white; /* White outline */
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-item {
+  flex: 1 1 calc(30% - 1rem); /* Increased width of food containers */
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.product-item h2 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.product-item p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  flex-grow: 1;
+  color: white;
+}
+
+.product-item button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.product-item button:hover {
+  background-color: gold;
+}
+
+.cart-info {
+  width: 300px;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-left: 2px solid white;
+}
+
+.cart-info .header {
+  grid-column: 1 / -1;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.cart-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-info ul li {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  color: white;
+}
+
+.cart-info ul li .name,
+.cart-info ul li .cost,
+.cart-info ul li .qty {
+  text-align: center;
+}
+
+.cart-info ul li .delete-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 200%;
+  padding: 1px;
+}
+
+.cart-info ul li .delete-button:hover {
+  background-color: red;
+  color: white;
+}
+
+.cart-info p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.pay-button {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+  background-color: gold;
+}

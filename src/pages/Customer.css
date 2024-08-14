@@ -1,0 +1,63 @@
+/* Customer.css */
+.customer-container {
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #000000;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .customer-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .customer-mobile {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .customer-order {
+    margin-bottom: 15px;
+  }
+  
+  .customer-order h2,
+  .customer-reviews h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .customer-order ul,
+  .customer-reviews ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .customer-order li,
+  .customer-reviews li {
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  
+  .customer-bill {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .customer-reviews p {
+    font-style: italic;
+    color: #ffffff;
+  }
+  .search-bar {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  

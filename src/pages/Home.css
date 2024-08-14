@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+  font-family: 'lud';
+  src: url('../assets/fonts/Baboy.ttf') format('truetype');
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.home-container {
+  text-align: center;
+  margin-top: 30px;
+  height: calc(100vh - 60px); /* Ensure it covers the entire viewport except for the footer */
+  color: white; /* Adjust text color for better visibility */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background: url('../assets/homebackground.gif') no-repeat center center fixed; 
+  background-size: cover; /* Ensure the background image covers the entire page */
+}
+
+.animated-text, .subtitle {
+  font-family: 'lud', cursive;
+  font-weight: bold; /* Make text bold */
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: colorChange 3s ease-in-out 1s forwards;
+}
+
+.animated-text {
+  font-size: 5rem; /* Increased font size */
+  animation: handwriting 3s steps(40, end) 1 normal both, colorChange 3s ease-in-out 1s forwards;
+}
+
+.subtitle {
+  font-size: 2rem; /* Adjust font size for the subtitle */
+  margin-top: 10px; /* Adjust margin to bring it closer to the main text */
+}
+
+@keyframes handwriting {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Adjust as needed based on text length */
+  }
+}
+
+@keyframes colorChange {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Arrange buttons in a column */
+  align-items: center; /* Center align buttons horizontally */
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 1s ease-in; /* Reduced from 2s to 1s */
+}
+
+.button-container.fade-in {
+  opacity: 1;
+}
+
+.home-button {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background initially */
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block; /* Ensure buttons are block level */
+  font-family: 'lud', cursive;
+  font-size: 16px;
+  margin: 10px 0; /* Space between buttons */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Raised effect on hover */
+}
+
+.socials {
+  margin-top: auto; /* Pushes the icons to the bottom of the container */
+  margin-bottom: 1rem; /* Space between the icons and the bottom of the page */
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: center; /* Center icons horizontally */
+  width: 100%;
+}
+
+.socialss {
+  font-size: 2rem; /* Adjust size of icons */
+  margin: 0 1rem; /* Space between icons */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: #ffffff; /* Icon color */
+  transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+.facebook:hover {
+  color: #3b5998; /* Facebook blue */
+}
+
+.twitter:hover {
+  color: #1da1f2; /* Twitter blue */
+}
+
+.insta:hover {
+  color: #f73ea7; /* Instagram pink */
+}
+
+.link:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.footerss {
+  text-align: center;
+  padding: 1rem; /* Padding around the footer content */
+  background-color: transparent; /* Transparent background for the footer */
+  color: white; /* Text color for the footer */
+  position: relative;
+  bottom: 0;
+  width: 100%; /* Ensure it covers the full width of the page */
+}
+
+.footer-textss {
+  font-family: 'lud'; /* Consistent font with other elements */
+  font-size: 1rem; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+}
